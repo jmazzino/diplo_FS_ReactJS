@@ -1,0 +1,52 @@
+/*
+font-family: "Ubuntu", sans-serif;
+
+.ubuntu-condensed-regular {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
+
+
+.caja1
+{
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: "Ubuntu", sans-serif;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 40px;
+    box-shadow: 30px 30px 10px black;
+    /**Eje x Eje y - blur - color **/
+    column-count: 1;
+    column-gap: 50px;
+    align-items: center;
+    
+}
+
+
+
+
+
+.body h1
+{
+    color:black;
+    font-family: "Ubuntu Condensed", sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+}
+
+.body 
+{
+    background: #EEAECA;
+}
+
+.manito
+{
+    font-size: 50px;
+}
