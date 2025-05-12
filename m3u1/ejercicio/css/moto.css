@@ -28,10 +28,10 @@ nav {
 }
 
 nav ul {
-    list-style:  none;
+    list-style: none;
     margin: 0;
-    padding:0;
-    display: flex;    
+    padding: 0;
+    display: flex;
 }
 
 nav ul li {
@@ -53,7 +53,7 @@ nav ul li a:hover {
 
 
 nav ul li a.activo {
-    background-color:  grey;
+    background-color: grey;
 }
 
 .holder {
@@ -69,7 +69,7 @@ h2 {
 footer {
     background-color: #202020;
     clear: both;
-    color:white;
+    color: white;
     text-align: center;
     padding: 5px 0;
     margin-top: 20px;
@@ -81,14 +81,29 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
 .bienvenidos {
     width: auto;
     padding-right: 10px;
-    box-sizing: border-box; 
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.bienvenidos h2 {
+    font-size: 20px;
+    text-align: center;
+
+
 }
 
 .bienvenidos p {
     font-size: 20px;
+}
+
+.medio h2 {
+    font-size: 45px;
+    text-align: center;
+
 }
 
 .promociones {
@@ -103,19 +118,19 @@ footer {
 
 .promocion .nombre {
     font-weight: bold;
-    font-style: italic; 
-    font-size: 22px;
-    background-color: rgb(238, 7, 134);    
+    font-size: 15px;
+    background-color: rgb(238, 7, 134);
     display: block;
-    
+    padding: 16px;
+    text-align: center;
 }
 
 .promocion .texto {
-    font-weight: bold;
-    font-style: italic; 
-    font-size: 22px;
-    background-color: yellow;    
+    font-style: italic;
+    font-size: 15px;
+    background-color: yellow;
     display: block;
+    padding: 10px;
 }
 
 /* inicio nosotros */
@@ -130,32 +145,31 @@ footer {
 
 .persona {
     border: 1px solid #ccc;
-    border-radius: 5px; 
+    border-radius: 5px;
     width: 18%;
     text-align: center;
     padding: 13px;
     box-sizing: border-box;
-    
+
 }
 
-.persona img{
+.persona img {
     border-radius: 50%;
     max-width: 60%;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.persona h5
-{
+.persona h5 {
     font-size: 14px;
     margin-top: 5px;
 }
 
-.persona h6{
+.persona h6 {
     font-size: 11px;
     font-style: italic;
 }
 
-.persona p{
+.persona p {
     color: #666;
     font-size: 10px;
 }
@@ -166,12 +180,12 @@ footer {
     border-radius: 10px;
     padding: 16px;
     margin: 16px 0;
-    display:flex;
+    display: flex;
     gap: 32px;
     align-items: center;
 }
 
-.servicio .info h4{
+.servicio .info h4 {
     color: #2e64a1;
     font-weight: 500;
     font-style: italic;
@@ -179,17 +193,17 @@ footer {
     padding-bottom: 10px;
 }
 
-.servicio .info p{
+.servicio .info p {
     font-size: 13px;
     line-height: 19px;
 }
 
-.servicio img{
+.servicio img {
     border-radius: 13px;
     display: block;
     max-width: 225px;
 }
 
-.servicio:nth-child(even){
+.servicio:nth-child(even) {
     flex-direction: row-reverse;
 }
