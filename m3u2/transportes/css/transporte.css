@@ -213,7 +213,7 @@ footer {
 
 .contacto {
     display: flex;
-    gap 24px;
+    gap: 24px;
 }
 .contacto div {
     width: 100%;
