@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="ejercicio_1.css">
+</head>
+
+<body>
+
+    <div class="cuadrado1" style="border: solid black 3px">
+        <p>
+        <h3 style="text-align-last: center;">CUADRADO 1</h3>
+        </p>
+    </div>
+
+
+    <div class="cuadrado2" style="border: solid black 3px">
+    <p>
+    <h3 style="text-align-last: center;">CUADRADO 2</h3>
+
+    </p>
+    </div>
+
+
+    <div class="cuadrado3" style="border: solid black 3px">
+    <p>
+    <h3 style="text-align-last: center;">CUADRADO 3</h3>
+    </p>
+    </div>
+
+    <script>
+        // CSS
+        const cuadrado1 = document.getElementsByClassName('cuadrado1')[0];
+        const cuadrado2 = document.getElementsByClassName('cuadrado2')[0];
+        const cuadrado3 = document.getElementsByClassName('cuadrado3')[0];
+
+        cuadrado1.addEventListener('click', function () {
+            cuadrado1.classList.add('color');
+        });
+
+        cuadrado1.addEventListener('dblclick', function () {
+            cuadrado1.classList.add('nocolor');
+        });
+
+        cuadrado2.addEventListener('click', function () {
+            cuadrado2.classList.add('color');
+        });
+
+        cuadrado2.addEventListener('dblclick', function () {
+            cuadrado2.classList.add('nocolor');
+        });
+
+        cuadrado3.addEventListener('click', function () {
+            cuadrado3.classList.add('color');
+        });
+
+        cuadrado3.addEventListener('dblclick', function () {
+            cuadrado3.classList.add('nocolor');
+        });
+
+
+    </script>
+</body>
+
+</html>

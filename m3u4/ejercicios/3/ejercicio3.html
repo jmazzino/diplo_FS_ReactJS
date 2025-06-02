@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alumnos Aprobados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    ul {
+      list-style-type: square;
+      color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Listado de Alumnos Aprobados</h2>
+  <ul id="listaAprobados"></ul>
+
+  <script>
+    const alumnos = [
+      { nombre: 'Juan Gomez', nota: 7 },
+      { nombre: 'Pedro Rodriguez', nota: 4 },
+      { nombre: 'Roxana García', nota: 8 },
+      { nombre: 'Luciano Lopez', nota: 5 },
+      { nombre: 'Fernanda Gimenez', nota: 6 },
+      { nombre: 'Florencia Martinez', nota: 10 },
+      { nombre: 'Raul Sanchez', nota: 7 },
+      { nombre: 'Sandra Figueroa', nota: 8 }
+    ];
+
+    const lista = document.getElementById("listaAprobados");
+
+    // Filtramos los alumnos aprobados
+    const aprobados = alumnos.filter(alumno => alumno.nota >= 7);
+
+    // Mostramos cada alumno aprobado en la lista
+    aprobados.forEach(alumno => {
+      const item = document.createElement("li");
+      item.textContent = `${alumno.nombre} - Nota: ${alumno.nota}`;
+      lista.appendChild(item);
+    });
+  </script>
+
+</body>
+</html>

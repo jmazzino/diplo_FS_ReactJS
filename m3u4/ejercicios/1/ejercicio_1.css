@@ -1,0 +1,40 @@
+.cuadrado1 {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.cuadrado1.color {
+    background: green;
+}
+
+.cuadrado1.nocolor {
+    background: white;
+}
+
+.cuadrado2 {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.cuadrado2.color {
+    background:blue;
+}
+.cuadrado2.nocolor {
+    background: white;
+}
+
+.cuadrado3 {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.cuadrado3.color {
+    background: red;
+}
+.cuadrado3.nocolor {
+    background: white;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador de Caracteres</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      font-size: 16px;
+    }
+    #contador {
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Escribe algo:</h2>
+  <textarea id="miTextarea" maxlength="200" placeholder="Máximo 200 caracteres..."></textarea>
+  <div id="contador">0 / 200 caracteres</div>
+
+  <script>
+    const textarea = document.getElementById('miTextarea');
+    const contador = document.getElementById('contador');
+    const maxCaracteres = textarea.maxLength;
+
+    textarea.addEventListener('input', () => {
+      const longitud = textarea.value.length;
+      contador.textContent = `${longitud} / ${maxCaracteres} caracteres`;
+    });
+  </script>
