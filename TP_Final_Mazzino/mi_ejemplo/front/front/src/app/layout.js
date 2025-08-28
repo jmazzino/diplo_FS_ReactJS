@@ -16,27 +16,19 @@ export default function RootLayout({ children }) {
             <div className="logo">
               <img src="images/logo.png" width="100" alt="Transportes 2025 JUEVES"></img>
               <h1>Transportes 2025 JUEVES</h1>
-
-
             </div>
-            <div className="logo"></div>
-            <ul >
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </ul>
           </div>
-        </div>
 
-      </header>
+        </header>
+        <Nav/>
 
+        {children}
 
+        <footer>
+          <p>Diseñado por Jorge Mazzino - &copy;2025</p>
 
-      <footer>
-        <p>Diseñado por Jorge Mazzino - &copy;2025</p>
-
-      </footer>
-    </body>
-    </html >
+        </footer>
+      </body>
+    </html>
   );
 }
