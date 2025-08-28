@@ -9,21 +9,28 @@ router.get('/', function (req, res, next) {
 
 module.exports = router;
 
+router.get('/logout', function (req, res, next) {
+    req.session.destroy();
+    res.render('admin/login', {
+        layout: 'admin/layout'
+    });
+});
+
 router.post('/', async (req, res, next) => {
     try {
         var usuario = req.body.usuario;
         var password = req.body.password;
 
         var data = await usuariosModel.getUserByUsernameAndPassword(usuario, password);
+        console.log("Muestro data antes");
         console.log(data);
-        console.log(data.id);
 
         if (data != undefined) {
-        
+            console.log("Muestro data despues");
             console.log(data.id);
             req.session.id_usuario = data.id;
             req.session.nombre = data.usuario;
-            
+
             res.redirect('/admin/novedades');
         } else {
             res.render('admin/login', {
@@ -37,4 +44,4 @@ router.post('/', async (req, res, next) => {
         console.log(err);
     }
 
-    }) 
+}) 
